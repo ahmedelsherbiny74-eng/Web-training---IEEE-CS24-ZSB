@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+
+            <input type="text" name="token" value="b92f1fc2fce391ad7af633723afd3055" hidden>
+            
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" value="o@o.com" readonly>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" minlength="5" maxlength="20" required autofocus>
+            </div>
+
+            <br>
+
+            <div>
+                <p>Skills:</p>
+                
+                <input type="checkbox" name="skills" id="PS" value="Problem Solving">
+                <label for="PS" >Problem Solving</label>
+                <br>
+
+                <input type="checkbox" name="skills" id="LT" value="Logical Thinking">
+                <label for="LT" >Logical Thinking</label>
+                <br>
+
+                <input type="checkbox" name="skills" id="AS" value="Advanced Search" checked>
+                <label for="AS" >Advanced Search</label>
+                <br>
+
+                <input type="checkbox" name="skills" id="AP" value="Analysis Planning">
+                <label for="AP" >Analysis Planning</label>
+                <br>
+            </div>
+
+            <div>
+                <p>Job:</p>
+
+                <input type="radio" name="job" id="FED" value="Front-End Developer" checked>
+                <label for="FED">Front-End Developer</label>
+                <br>
+
+                <input type="radio" name="job" id="BDE" value="Back-End Developer">
+                <label for="BDE">Back-End Developer</label>
+                <br>
+
+                <input type="radio" name="job" id="BA" value="Business Analyst">
+                <label for="BA">Business Analyst</label>
+                <br>
+
+                <input type="radio" name="job" id="PM" value="Project Manager">
+                <label for="PM">Project Manager</label>
+                <br>
+
+                <input type="radio" name="job" id="SM" value="Scrum Master">
+                <label for="SM">Scrum Master</label>
+                <br>
+
+            </div>
+
+            <input type="reset" value="Empty" >
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>
