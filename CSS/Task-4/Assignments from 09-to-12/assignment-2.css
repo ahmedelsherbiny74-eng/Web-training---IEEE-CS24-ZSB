@@ -1,0 +1,19 @@
+div {
+    background-color: rgb(220, 220, 220);
+    outline: 8px solid rgb(220, 220, 220);
+    width: 400px;
+    margin: 25px;
+    padding: 5px 10px;
+}
+
+.element-1 {
+    border-left: 4px solid rgb(211, 50, 98);
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border-left: 4px solid rgb(9, 144, 124);
+}
