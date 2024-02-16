@@ -1,0 +1,9 @@
+p {
+    font-size: 400%;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    color: black;
+    text-shadow: 1px 1px 0 rgb(255, 68, 0), 2px 2px 0 rgb(0, 179, 255), 3px 3px 0 rgb(144, 0, 255)
+}

@@ -1,0 +1,20 @@
+p {
+    text-align: center;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.one {
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.two {
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+}
+
+.three {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+}

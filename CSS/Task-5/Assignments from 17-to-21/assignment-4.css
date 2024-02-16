@@ -1,0 +1,14 @@
+a {
+    background-color: rgb(25, 160, 124);
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    font-weight: bold;
+    padding: 30px 60px;
+    border-bottom: 20px solid rgb(1, 87, 60);
+    margin: 20px auto;
+    width: fit-content;
+    display: block;
+}
