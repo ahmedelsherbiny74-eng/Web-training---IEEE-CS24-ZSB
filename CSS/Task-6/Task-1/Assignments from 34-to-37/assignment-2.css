@@ -1,0 +1,20 @@
+div {
+    background-color: #dadada;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+div::first-letter {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 14px 10px;
+    position: absolute;
+    float: left;
+    margin-left: -35px;
+    margin-top: -14px;
+}
