@@ -1,0 +1,72 @@
+:root {
+    --maincolor: #ddd;
+    --flexible: flex;
+    --margin: 5px;
+}
+
+.page {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEE;
+    width: 1000px;
+    height: 530px;
+    margin: 30px auto;
+    padding: 5px;
+}
+
+.page .header {
+    display: var(--flexible);
+    justify-content: space-between;
+}
+
+.page .header .logo,
+.page .header .links {
+    background-color: var(--maincolor);
+    display: var(--flexible);
+    height: 40px;
+    width: calc(100% / 12);
+    margin: var(--margin);
+    align-items: center;
+    justify-content: center;
+}
+
+.page .header .links {
+    list-style-type: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right:15px;
+}
+
+.page .header .links li {
+    padding-left: 10px;
+}
+
+.page .main-area {
+    display: var(--flexible);
+}
+
+.page .main-area .content,
+.page .main-area .sidebar {
+    background-color: var(--maincolor);
+    display: var(--flexible);
+    height: 400px;
+    margin: var(--margin);
+    padding: 10px
+}
+
+.page .main-area .content {
+    width: calc(100% * 2 / 3);
+}
+
+.page .main-area .sidebar {
+    width: calc(100% / 3);
+}
+
+.page .footer {
+    background-color: var(--maincolor);
+    display: var(--flexible);
+    height: 40px;
+    margin: var(--margin);
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}

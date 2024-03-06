@@ -1,0 +1,14 @@
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #EEE;
+    color: #ff5722;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0 0 #ff5722, -5px 0 0 #03a9f4;
+}

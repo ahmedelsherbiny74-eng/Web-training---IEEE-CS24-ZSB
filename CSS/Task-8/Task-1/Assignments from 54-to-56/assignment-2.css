@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    position: relative;
+    width: 600px;
+    margin: 15px auto;
+    height: 50px;
+}
+
+input {
+    background-color: #EEE;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    caret-color: red;
+}
+
+div::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+    bottom: 1px;
+    left: 0;
+}

@@ -1,0 +1,233 @@
+:root {
+    ---maincolor: #6070fb;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(landing.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    margin: -8px -2px;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 100%;
+    height: 101%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    display: flex;
+    text-transform: uppercase;
+    align-content: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: -20px 0px 0 20px;
+}
+
+nav h1 {
+    position: relative;
+    display: inline-flex;
+    color: var(---maincolor);
+    font-size: 42px;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(---maincolor);
+}
+
+.over_img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    height: 75vh;
+}
+
+.over_img .hello {
+    display: flex;
+    font-size: 350%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: var(---maincolor);
+}
+
+.over_img .description {
+    display: flex;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+}
+
+.plan {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    height: 80px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.plan .title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.plan .description {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 22px;
+}
+
+.properties,
+.account {
+    width: 980px;
+    height: 230px;
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.properties .bs,
+.properties .cd,
+.properties .etu,
+.account .basic,
+.account .standard,
+.account .premium {
+    width: calc(840px / 3);
+    height: 170px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.properties .bs .icon,
+.properties .cd .icon,
+.properties .etu .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEE;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.properties .bs .title,
+.properties .cd .title,
+.properties .etu .title {
+    font-weight: bold;
+    align-items: center;
+}
+
+.properties .cd .descreption,
+.properties .bs .descreption,
+.properties .etu .descreption {
+    text-align: center;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.account {
+    height: 380px;
+}
+
+.account .basic,
+.account .standard,
+.account .premium {
+    box-shadow: 0px 0px 20px 20px #00000031;
+    background-color: #ffffff;
+    width: calc(940px / 3);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px #eee;
+}
+
+.account .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(---maincolor);
+}
+
+.account .type {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.account hr {
+    width: 90%;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.account ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-transform: capitalize;
+    list-style-type: none;
+    height: 140px;
+    padding-left: 0;
+    font-size: 14px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+i {
+    color: var(---maincolor);
+}
+
+.account .merits .sign {
+    padding-right: 8px;
+}
+
+.account button {
+    text-transform: capitalize;
+    width: 120px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #FFF;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid var(---maincolor);
+}
+
+.account button:hover {
+    color: var(---maincolor);
+    background-color: #f6f6ff;
+    border: 3px solid var(---maincolor);
+}
