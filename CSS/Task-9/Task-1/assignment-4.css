@@ -21,36 +21,17 @@
 }
 
 .one {
-    grid-column: span 3;
-    order: 8;
+    grid-area: 6 / span 3;
 }
 
 .two {
-    grid-column: span 2;
-    order: 2;
-}
-
-.three {
-    order: 3;
-}
-
-.four {
-    order: 4;
+    grid-column-start: span 2;
 }
 
 .five {
     grid-area: span 3 / span 2;
-    order: 5;
-}
-
-.six {
-    order: 6;
-}
-
-.seven {
-    order: 7;
 }
 
 .eight {
-    grid-column: span 3;
+    grid-area: 1 / span 3;
 }
