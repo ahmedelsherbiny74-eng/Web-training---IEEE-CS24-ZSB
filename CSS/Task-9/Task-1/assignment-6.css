@@ -1,0 +1,99 @@
+.parent {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEE;
+    padding: 40px 50px;
+    width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-areas: "osama osama ahmed shady"
+                         "mo-ibrahim mahmoud mahmoud shady"
+                         "mo-ibrahim ezz ezz shady"
+                         "mo-sayed ibrahim gamal eman";
+    gap: 10px;
+}
+
+.osama {
+    grid-area: osama;
+}
+
+.shady {
+    grid-area: shady;
+}
+
+.mo-ibrahim {
+    grid-area: mo-ibrahim;
+}
+
+.mahmoud {
+    grid-area: mahmoud;
+}
+
+.ezz {
+    grid-area: ezz;
+}
+
+.osama,
+.ahmed,
+.mo-ibrahim,
+.ezz,
+.mo-sayed,
+.gamal,
+.eman,
+.shady,
+.mahmoud,
+.ibrahim  {
+    padding: 15px;
+    border-bottom: 2px solid #ff3d00;
+}
+
+.osama,
+.ahmed,
+.mo-ibrahim,
+.ezz,
+.mo-sayed,
+.gamal,
+.eman {
+    background-color: #FFF;
+    color: black;
+}
+
+.shady,
+.mahmoud,
+.ibrahim {
+    background-color: black;
+    color: #FFF;
+}
+
+.name,
+.first {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.first {
+    margin: 15px 0;
+}
+
+.job {
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+}
+
+.second {
+    font-size: 13px;
+}
+
+.first,
+.second {
+    line-height: 20px;
+}
+
+.shady .job,
+.mahmoud .job,
+.ibrahim .job {
+    color: rgb(255, 255, 255, 0.6);
+}
