@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+div:not([class]) h3 + div:nth-last-child(2) {
+    color: red;
+}

@@ -1,0 +1,45 @@
+div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #EEE;
+    border-radius: 50%;
+}
+
+div::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #e91e63;
+    border-left-color: transparent;
+    transition: 0.5s;
+}
+
+div:hover::after {
+    transform: rotate(1turn);
+}
+
+div::before {
+    position: absolute;
+    content: "";
+    width: 221px;
+    height: 221px;
+    border-radius: 50%;
+    border: 10px solid #2196f3;
+    border-right-color: transparent;
+    transition: 0.5s 0.5s;
+}
+
+div:hover::before {
+    transform: rotate(1turn);
+}

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+}
+
+.parent {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin: 20px auto;
+}
+
+.parent > div {
+    background-color: #EEE;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.parent div p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #05988a;
+}
+
+@media (max-width: 991px) {
+    .parent > div {
+        width: 90%;
+    }
+    .parent div p:first-child {
+        color: black;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .parent .one {
+        width: calc(100% - 75px);
+    }
+
+    .parent div:not(.one) {
+        width: calc((100% - 180px) / 3);
+    }
+
+    .parent div p:first-child {
+        color: red;
+    }
+}
+
+@media (min-width: 1200px) {
+    .parent .one,
+    .parent .four {
+        width: calc(100% - 75px);
+    }
+
+    .parent .two,
+    .parent .three {
+        width: calc(50% - 64px);
+    }
+    
+    .parent div p:first-child {
+        color: #05988a;
+    }
+}
