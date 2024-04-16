@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      /* This code won't work because 
+         it will be before the element. */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      /* This code will work because it will be
+         implemented after loading the page. */
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      /* This code won't work because the 
+         second code will over write on it. */
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
