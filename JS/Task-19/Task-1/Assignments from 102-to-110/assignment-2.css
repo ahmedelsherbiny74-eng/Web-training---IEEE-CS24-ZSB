@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    left: 50%;
+    top: 50vh;
+    translate: -50% -50%;
+    position: relative;
+    background-color: #f5f3f4;
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    background-color: red;
+    color: #FFF;
+    border: none;
+    border-radius: 50%;
+    padding: 6px 9px 6px 9px;
+    cursor: pointer;
+    font-weight: bold;
+}
