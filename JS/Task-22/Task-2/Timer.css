@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+h3 {
+    background: linear-gradient(to right, #6f218e, #291e67);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    background: linear-gradient(to right, #6f218e, #291e67);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.container > div {
+    background-color: #EEE;
+    padding: 15px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div .number {
+    color: #291e67;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #661e83;
+}
